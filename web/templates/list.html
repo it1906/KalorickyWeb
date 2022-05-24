@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} Seznam receptů{% endblock %}
+{% block content %}
+<div class="row mb-3">
+ <div class="col-sm-12 bg-warning">
+ <h2 class="display-4 text-center">Seznam filmů</h2>
+ </div>
+</div>
+    <div class="row">
+    {% for recepty in recepty-list %}
+        {% recipe.name %}
+    {% endfor %}
+    </div>
+{% endblock %}
